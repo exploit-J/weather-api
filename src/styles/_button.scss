@@ -1,0 +1,23 @@
+/* weather-button */
+
+.button-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .button {
+    // width: 80px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid $secondary;
+    background-color: $border;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &.active {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+}
