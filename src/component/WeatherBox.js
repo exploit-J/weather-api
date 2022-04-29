@@ -2,6 +2,11 @@ import React from "react";
 
 // destructuring 문법
 const WeatherBox = ({ weather, searchValue, setSearchValue, setCity }) => {
+  const enter = (e) => {
+    if (e.key == "Enter") {
+      setCity(searchValue);
+    }
+  };
   return (
     <div className="weather-box">
       <div className="weather-search">
@@ -9,6 +14,7 @@ const WeatherBox = ({ weather, searchValue, setSearchValue, setCity }) => {
           onChange={(e) => {
             setSearchValue(e.target.value);
           }}
+          onKeyPress={enter}
           type="text"
           maxLength={20}
         ></input>
@@ -33,7 +39,7 @@ const WeatherBox = ({ weather, searchValue, setSearchValue, setCity }) => {
           {weather?.main.temp}℃
         </h2>
         <h4 className="temp f">
-          ( {(weather?.main.temp * 1.8 + 32).toFixed(2)}℉ )
+          ( {(weather?.main.temp * 1.8 + 32).toFixed(1)}℉ )
         </h4>
         <h3 className="condition">{weather?.weather[0].main}</h3>
       </div>
