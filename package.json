@@ -18,8 +18,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "node-sass -wr --source-map true src/styles/main.scss src/App.css"
+    "sass": "node-sass -wr --source-map true src/styles/main.scss src/App.css",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://exploit-j.github.io/weather-api/",
   "eslintConfig": {
     "extends": [
       "react-app",
