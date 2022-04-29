@@ -21,7 +21,6 @@
     "sass": "node-sass -wr --source-map true src/styles/main.scss src/App.css",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://exploit-j.github.io/weather-api/",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -39,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "https://exploit-j.github.io/weather-api/",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

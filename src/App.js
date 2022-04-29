@@ -7,13 +7,6 @@ import WeatherButton from "./component/WeatherButton";
 import ClipLoader from "react-spinners/ClipLoader";
 import WeatherImg from "./component/WeatherImg";
 
-// 1. 앱이 실행되면 현재 위치기반의 날씨가 보인다
-// 2. 날씨정보에는 현재 도시, 섭씨, 화씨온도, 날씨상태가 있다
-// 3. 5개의 버튼(1개는 현재위치, 4개는 다른도시)
-// 4. 다른 도시 버튼 클릭 시 해당 도시 날씨정보 표시
-// 5. 현재위치 버튼을 누르면 현재위치 기반 날씨정보가 표시된다
-// 6. 데이터 가져오는동안 로딩 스피너가 돈다.
-
 function App() {
   const [weather, setWeather] = useState(null);
   const [city, setCity] = useState("");
