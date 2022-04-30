@@ -1,4 +1,4 @@
-# 날씨정보 App
+# 날씨정보 App 토이프로젝트
 ### 데모 : https://exploit-j.github.io/weather-api/
 -------
 * 주요기능
