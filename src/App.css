@@ -73,6 +73,7 @@ li {
     .weather-box .weather-search input {
       width: 70%;
       height: 30px;
+      padding: 0 6px;
       border: 2px solid #b2b3b9;
       border-radius: 5px;
       margin-left: 5px;
